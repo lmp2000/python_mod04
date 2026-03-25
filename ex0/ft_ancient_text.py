@@ -3,7 +3,7 @@ def main() -> None:
         '=== CYBER ARCHIVES - DATA RECOVERY SYSTEM ===\n'
         )
 
-    print(f'Accessing Storage Vault: ancient_fragment.txt')
+    print('Accessing Storage Vault: ancient_fragment.txt')
     try:
         f = open("ancient_fragment.txt", "r")
         print('Connection established\n')

@@ -8,7 +8,7 @@ def main() -> None:
     )
 
     try:
-        with open('classified_data.txt') as f:
+        with open('classified_data.txt', 'r') as f:
             content = f.read()
         print(
             'Vault connection established with failsafe protocols\n'

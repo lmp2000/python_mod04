@@ -16,8 +16,8 @@ def crisis_handler(file_name: str) -> None:
             )
     except FileNotFoundError:
         print(
-        f"\nCRISIS ALERT: Attempting access to'{file_name}'..."
-    )
+            f"\nCRISIS ALERT: Attempting access to'{file_name}'..."
+        )
         sys.stderr.write(
             'RESPONSE: Archive not found in storage matrix\n'
             )
@@ -26,8 +26,8 @@ def crisis_handler(file_name: str) -> None:
             )
     except PermissionError:
         print(
-        f"\nCRISIS ALERT: Attempting access to'{file_name}'..."
-    )
+            f"\nCRISIS ALERT: Attempting access to'{file_name}'..."
+        )
         sys.stderr.write(
             'RESPONSE: Security protocols deny access\n'
             )
@@ -36,8 +36,8 @@ def crisis_handler(file_name: str) -> None:
             )
     except Exception:
         print(
-        f"\nCRISIS ALERT: Attempting access to'{file_name}'..."
-    )
+            f"\nCRISIS ALERT: Attempting access to'{file_name}'..."
+        )
         sys.stderr.write(
             'Something went wrong, try again...\n'
             )
@@ -45,11 +45,7 @@ def crisis_handler(file_name: str) -> None:
 
 def main() -> None:
     print(
-        '=== CYBER ARCHIVES - CRISIS RESPONSE SYSTEM ===\n'
-    )
-
-    print(
-        "CRISIS ALERT: Attempting access to'lost_archive.txt'..."
+        '=== CYBER ARCHIVES - CRISIS RESPONSE SYSTEM ==='
     )
 
     crisis_handler('lost_archive.txt')
